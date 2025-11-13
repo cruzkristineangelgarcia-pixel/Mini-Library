@@ -1,0 +1,94 @@
+/* Login.css */
+
+/* Card container */
+.card {
+  background-color: #f8e8e8; /* light cream for contrast */
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  margin: 60px auto; /* centers the card vertically with some top spacing */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.card h2 {
+  color: #6b0d0d; /* deep burgundy */
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Inputs */
+.card input {
+  width: 92%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #b35b5b; /* medium burgundy border */
+  font-size: 1rem;
+}
+
+.card input:focus {
+  outline: none;
+  border-color: #6b0d0d; /* deep burgundy on focus */
+  box-shadow: 0 0 5px rgba(107, 13, 13, 0.4);
+}
+
+/* Button */
+.card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6b0d0d; /* deep burgundy */
+  color: #f8e8e8;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: #8b1c1c; /* slightly lighter burgundy on hover */
+}
+
+/* Success & error messages */
+.success-message {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background-color: #e6f4e6;
+  color: #2f7a2f;
+}
+
+.error-message {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background-color: #fbeaea;
+  color: #8b1c1c;
+}
+
+/* Extra link below button */
+.extra-link {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.extra-link a {
+  color: #6b0d0d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.extra-link a:hover {
+  text-decoration: underline;
+}

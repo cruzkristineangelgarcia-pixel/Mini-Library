@@ -1,0 +1,154 @@
+/* App.css */
+
+/* General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff5f5;
+  margin: 0;
+  padding: 0;
+  color: #3a1b1b;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6b0d0d;
+  padding: 15px 20px;
+  color: #f8e8e8;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header .nav-buttons a {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #f8e8e8;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+header .nav-buttons a.active {
+  border: 2px solid #f8e8e8; /* highlight current page */
+}
+
+header .nav-buttons a:hover {
+  background-color: #8b1c1c;
+  color: #fff;
+}
+
+/* Logout button in header */
+header .nav-buttons button {
+  background-color: #f8e8e8;
+  color: #6b0d0d;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header .nav-buttons button:hover {
+  background-color: #8b1c1c;
+  color: #fff;
+}
+
+/* Centered card container for login/register */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px); /* header height */
+  padding: 20px;
+}
+
+.card {
+  background-color: #f8e8e8;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  color: #6b0d0d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Forms */
+input, select {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #b35b5b;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #6b0d0d;
+  box-shadow: 0 0 5px rgba(107, 13, 13, 0.5);
+}
+
+button {
+  background-color: #6b0d0d;
+  color: #f8e8e8;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #8b1c1c;
+}
+
+/* Success & error messages */
+.success-message {
+  color: #2f7a2f;
+  background-color: #e6f4e6;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.error-message {
+  color: #8b1c1c;
+  background-color: #fbeaea;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Extra links below buttons */
+.extra-link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.extra-link a {
+  color: #6b0d0d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.extra-link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,70 @@
+/* BookList.css */
+
+.booklist-page {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8e8e8;
+  min-height: 100vh;
+}
+
+/* Heading */
+.booklist-page h2 {
+  color: #6b0d0d;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* Error message */
+.booklist-page .error-message {
+  text-align: center;
+  color: #8b1c1c;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Book cards container */
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each book card */
+.book-card {
+  background-color: #fff5f5;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 300px;
+  flex: 1 1 250px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Book title */
+.book-card strong {
+  color: #6b0d0d;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Author */
+.book-card div {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Added by */
+.book-card small {
+  margin-top: auto;
+  color: #b35b5b;
+  font-size: 0.9rem;
+}
